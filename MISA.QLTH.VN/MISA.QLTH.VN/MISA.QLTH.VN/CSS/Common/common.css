@@ -1,0 +1,802 @@
+﻿button{
+    height:25px;
+    min-width:75px;
+}
+.flex {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.x-webkit *:focus {
+    outline: 0;
+}
+
+.flex_grow_one {
+    flex-grow: 1;
+}
+
+.absolute_right {
+    position: absolute;
+    right: 4px;
+}
+.relative{
+    position:relative;
+}
+.position_relative {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .position_relative .master.flex-1 {
+        flex: 1;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #ccc;
+    }
+
+    .position_relative .details {
+        height: 40%;
+        background: #fff;
+    }
+/*tiêu đề bảng mượn trả sách*/
+.details .detail_titles {
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 2px;
+    text-align: left !important;
+    font-size: 14px;
+}
+button{
+    cursor:pointer;
+}
+/* css cho bảng mượn sách*/
+.details  table:nth-child(3){
+    height:calc(100% - 60px - 30px)!important;
+}
+.color_gradient_gender {
+    background-image: none;
+    background-color: #f9f9f9;
+    /* background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(48%, #f9f9f9), color-stop(52%, #e2e2e2), color-stop(100%, #e8e8e8)); */
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: -o-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+}
+    .color_gradient_gender:hover{
+
+    }
+
+    .table_column_option {
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: #ccc;
+        width: 17px;
+        height: 22px;
+        /* height: 21px; */
+        cursor: pointer;
+        background: url(/Contents/images/trigger.gif) no-repeat;
+        background-position: center;
+        background-position: 0px 0px;
+        font-weight: bold;
+        color: #33528C;
+    }
+
+.table_row_effect_hover tbody tr:hover td {
+    background-color: #ffffff;
+}
+
+.btn_to_first {
+    background: url('../../Contents/images/page-first-disabled.gif') no-repeat center;
+    width: 20px;
+    opacity: 0.5;
+    height: 20px;
+}
+
+.btn_to_pre {
+    background: url('../../Contents/images/page-prev-disabled.gif') no-repeat;
+    background-position: center;
+    width: 20px;
+    opacity: 0.5;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btm_to_next {
+    background: url('../../Contents/images/page-next.gif') no-repeat;
+    background-position: center;
+    width: 20px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.btm_to_last {
+    background: url('../../Contents/images/page-last.gif') no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.seperate_page {
+    width: 100%;
+    min-width: 400px;
+    cursor: pointer;
+}
+
+.input_seperate_page {
+    width: 32px;
+    height: 24px;
+    min-width: 0px;
+    padding: 2px 3px;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}
+/*vẻ bảng sách mượn của bạn đọc*/
+#table_rental {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+    #table_rental tbody tr td {
+        padding: 6px 7px;
+    }
+    #table_rental tr th, #table_rental tr td {
+        overflow: hidden;
+    }
+
+    #table_rental thead tr th:nth-child(4),
+    #table_rental tbody tr td:nth-child(4),
+    #table_rental thead tr th:nth-child(2),
+    #table_rental tbody tr td:nth-child(2),
+    #table_rental thead tr th:nth-child(1),
+    #table_rental tbody tr td:nth-child(1) {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    #table_rental thead tr th:nth-child(6),
+    #table_rental tbody tr td:nth-child(6),
+    #table_rental thead tr th:nth-child(7),
+    #table_rental tbody tr td:nth-child(7),
+    #table_rental thead tr th:nth-child(8),
+    #table_rental tbody tr td:nth-child(8) {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    #table_rental thead tr th:nth-child(3),
+    #table_rental tbody tr td:nth-child(3) {
+        width: 100%;
+        min-width: 201px !important;
+    }
+
+    #table_rental thead tr th:nth-child(5),
+    #table_rental tbody tr td:nth-child(5) {
+        width: 150px;
+        min-width: 150px;
+    }
+
+    #table_rental thead tr th:nth-child(9) {
+        width: 130px;
+        min-width: 130px;
+    }
+
+    #table_rental tbody tr td:nth-child(9) {
+        width: 112px;
+        min-width: 112px;
+    }
+/* thân bảng*/
+    #table_rental tbody {
+        border-width: 0px 1px 1px 1px;
+        border-style: solid;
+        border-color: #ccc;
+        height: 100%;
+        display: block;
+        min-height: 100px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+/*dòng của bảng*/
+    #table_rental tr {
+        border-width: 0px 0px 0px 0px;
+        border-color: #ccc;
+        border-style: solid;
+        height: 29px;
+    }
+/* header của bảng*/
+    #table_rental thead {
+        display: block;
+        overflow: hidden;
+        border-width: 0px 0px 0px 1px;
+        border-style: solid;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(50%, #E4E5E7));
+        background-image: -webkit-linear-gradient(top, #f2f2f2, #E4E5E7 );
+        background-image: -o-linear-gradient(top, #f2f2f2, #E4E5E7 );
+        background-image: linear-gradient(top, #f2f2f2, #E4E5E7);
+    }
+
+.table_selected {
+    background-color: #FFCB60;
+}
+/* style table in qlth*/
+.reset_table_qlth {
+    width: 100%;
+}
+
+.border_table_qlth {
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: #CCCCCC;
+}
+
+.backgroud_thead_qlth {
+    background-color: #F2F2F2;
+}
+
+.text_thead_qlth {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.border_table_qlth td, .border_table_qlth th {
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: #ccc;
+}
+/* css cho các dòng lẻ*/
+
+#table_rental tbody tr:nth-child(2n+1) {
+    background-color: #ffffff;
+}
+/* css cho các dòng chẵn*/
+
+#table_rental tbody tr:nth-child(2n) {
+    background-color: #FAFAFA;
+}
+
+#table_rental tbody tr:hover {
+    background-color: #ccc;
+}
+/*css cho ảnh trạng thái đã trả*/
+.army_medal_green {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .army_medal_green span:nth-child(1) {
+        background: url('../../Contents/images/TagHeader-Green.png') no-repeat;
+        width: 10px;
+        height: 18px;
+    }
+
+    .army_medal_green div:nth-child(2) {
+        display: inline;
+        background-color: #2E7D32;
+        width: 50px;
+        height: 18px;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        font-size: 12px;
+    }
+/*css cho ảnh trạng thái chưa trả*/
+.army_medal_red {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .army_medal_red span:nth-child(1) {
+        background: url('../../Contents/images/TagHeader-Orange.png') no-repeat;
+        width: 10px;
+        height: 18px;
+    }
+
+    .army_medal_red div:nth-child(2) {
+        display: inline;
+        background-color: #fb8c00;
+        width: 50px;
+        height: 18px;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        font-size: 12px;
+    }
+/*draw nut loc*/
+.btn_manipulation {
+    cursor: pointer;
+    height: 22px;
+    margin-left: 1px;
+    border-radius: 3px;
+    width: 36px;
+    border-width: 1px;
+    padding: 2px;
+    border-style: solid;
+    border-color: #d1d1d1;
+    white-space: nowrap;
+    background-image: none;
+    background-color: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(48%, #f9f9f9), color-stop(52%, #e2e2e2), color-stop(100%, #e8e8e8));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+}
+    /*khi hover nút lọc thì đổi màu xanh biển*/
+    .btn_manipulation:hover {
+        border-color: #b0ccf2;
+        background-image: none;
+        background-color: #e4f3ff;
+        background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#e4f3ff),color-stop(48%,#d9edff),color-stop(52%,#c2d8f2),color-stop(100%,#c6dcf6));
+        background-image: -webkit-linear-gradient(top,#e4f3ff,#d9edff 48%,#c2d8f2 52%,#c6dcf6);
+        background-image: -moz-linear-gradient(top,#e4f3ff,#d9edff 48%,#c2d8f2 52%,#c6dcf6);
+        background-image: -o-linear-gradient(top,#e4f3ff,#d9edff 48%,#c2d8f2 52%,#c6dcf6);
+        background-image: linear-gradient(top,#e4f3ff,#d9edff 48%,#c2d8f2 52%,#c6dcf6);
+    }
+        /*khi hover nút lọc thì màu thành sọc cùng đổi màu xanh biển*/
+        .btn_manipulation:hover .btn_manipulation_content {
+            background-image: url('/Contents/Images/s-arrow-o.gif')!important;
+        }
+        /* nút lọc */
+        .btn_manipulation .btn_manipulation_content {
+            background-image: url('/Contents/Images/s-arrow.gif');
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 14px;
+            display: block;
+        }
+    .btn_manipulation .btn_manipulation_content .btn_manipulation_wrap{
+        display:block;
+        height:16px;
+        width:16px;
+        overflow:hidden;
+        zoom:1;
+    }
+        .btn_manipulation .btn_manipulation_content .btn_manipulation_wrap span:nth-child(1) {
+            font-size: 12px;
+            padding: 0;
+            display:block;
+            line-height: 16px;
+            font-weight: normal;
+            font-family: tahoma,arial,verdana,sans-serif;
+            white-space:nowrap;
+            zoom:1;
+            color:#333;
+            text-align:center;
+        }
+        /* dòng kẻ ngăn cách các icon*/
+    .tool_line_gray {
+        border-width: 0 1px;
+        border-right-color: #fff;
+        border-left-color: #D7D8D8;
+        height: 14px;
+        border-left: 1px solid #ccc;
+    }
+
+.tool_line_blue {
+    height: 70%;
+    border-left: 1px solid #ccc;
+}
+
+.toolbar_seperate_line {
+    height: 14px;
+    border-width: 0 1px;
+    border-style: solid;
+    border-right-color: #ffffff;
+    border-left-color: #98c8ff;
+}
+/* icon để mở dropdown*/
+.arrow_down {
+    color: #000;
+    font-size: 10px;
+    height: 14px;
+    width: 14px;
+    /* width: 14px; */
+    background: url(/Contents/images/arrow.gif) no-repeat center center;
+    /* background-image: url(../../Contents/Images/ic_register_reader.gif); */
+}
+
+.tool_bar_hover {
+    background: transparent url('../../Contents/images/toolbar-item-hover (1).png') repeat center center;
+    border-color: #bbcadb !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+
+    border-radius: 3px !important;
+}
+/*
+ *   thiet ke giao dien date picker
+ *   nnDuong 10:05 12/05/2019
+ *
+*/
+.ui-datepicker-calendar thead tr th {
+    width: 25px;
+    color: #233d6d;
+    font: normal 10px tahoma,arial,verdana,sans-serif;
+    text-align: right;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #b2d1f5;
+    background-image: none;
+    background-color: #dfecfb;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#edf4fd),color-stop(100%,#cde1f9));
+    background-image: -webkit-linear-gradient(top,#edf4fd,#cde1f9);
+    background-image: -moz-linear-gradient(top,#edf4fd,#cde1f9);
+    background-image: -o-linear-gradient(top,#edf4fd,#cde1f9);
+    background-image: -ms-linear-gradient(top,#edf4fd,#cde1f9);
+    background-image: linear-gradient(top,#edf4fd,#cde1f9);
+}
+
+.ui-datepicker-calendar tbody tr td {
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+    .ui-datepicker-calendar tbody tr td .ui-state-default {
+        padding: 0 4px 0 0;
+        font: normal 11px tahoma,arial,verdana,sans-serif;
+        color: black;
+        cursor: pointer;
+        line-height: 18px;
+        display: block;
+        text-decoration: none;
+    }
+/* css cho giao diện date picker*/
+.date_picker button {
+    display: flex;
+    height: 24px;
+    padding: 0px;
+    margin-left: 0px;
+    align-items: center;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: lightblue;
+    border-color: #ccc;
+    /* margin-left: 5px; */
+    border-radius: 3px;
+    /* background-size: 16px 21px; */
+    flex-grow: 0;
+    /* align-items: center; */
+    width: 26px;
+
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(48%, #f9f9f9), color-stop(52%, #e2e2e2), color-stop(100%, #e8e8e8));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: -o-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+}
+
+.manipulation_data_input.date_picker button span {
+    align-self: center;
+    margin: 0 auto;
+    background: url(/Contents/images/date-trigger.gif) no-repeat -1px -3px !important;
+    width: 14px;
+    /* padding: 3px; */
+    height: 13px;
+}
+
+.ui-datepicker-header {
+    padding: 3px 6px !important;
+    text-align: center !important;
+    background-image: none !important;
+    background-color: #23427c !important;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#264888),color-stop(100%,#1f3a6c)) !important;
+    background-image: -webkit-linear-gradient(top,#264888,#1f3a6c) !important;
+    background-image: -moz-linear-gradient(top,#264888,#1f3a6c) !important;
+    background-image: -o-linear-gradient(top,#264888,#1f3a6c) !important;
+    background-image: -ms-linear-gradient(top,#264888,#1f3a6c) !important;
+    background-image: linear-gradient(top,#264888,#1f3a6c) !important;
+}
+
+.ui-datepicker {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1b376c;
+    background-color: white;
+    width: 177px;
+}
+/*.ui-datepicker-prev {
+    background:url('/Contents/images/predatepick.gif');
+}
+.ui-datepicker-next {
+    background: url('/Contents/images/nextdatepicker.gif');
+}*/
+.ui-datepicker-title .ui-datepicker-month, .ui-datepicker-title .ui-datepicker-year {
+    color: white;
+}
+/* css cho date picker*/
+.ui-datepicker-arrow {
+    width: 15px;
+    height: 15px;
+    top: 6px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    background-color: #23427c;
+    filter: alpha(opacity=70);
+    opacity: .7;
+}
+
+.ui-datepicker-arrow {
+    position: absolute;
+    outline: 0;
+    font-size: 0;
+}
+
+.ui-icon-circle-triangle-e {
+    background-position: 0px 0px !important;
+    background: url('/Contents/images/nextdatepicker.gif') !important;
+}
+
+.ui-icon-circle-triangle-w {
+    background-position: 0px 0px !important;
+    background: url('/Contents/images/predatepick.gif') !important;
+}
+/* css cho chọn ngày*/
+.ui-datepicker-today {
+    border-color: darkred;
+    border-style: solid;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background-color: #dae5f3;
+    font-weight: bold;
+}
+
+
+
+.ui-state-hover span {
+    border: 1px solid transparent !important;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    border: 1px solid !important;
+    border-color: transparent !important;
+}
+
+.rowSelected {
+    background-color: #FFCB60 !important;
+}
+
+.table_title input:focus {
+    border-color: #99bce8;
+}
+
+.rowSelected:hover td {
+    background-color: #FFCB60 !important;
+}
+
+.ui-datepicker-close {
+    display: none;
+}
+/*
+    *contextmenu thiet ke lại bằng css
+    *nnDuong
+    *12/06/2019
+    *14:25PM
+*/
+
+.x-menu-item-active {
+    background-image: none;
+    background-color: #d9e8fb;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#e7f0fc),color-stop(100%,#c7ddf9));
+    background-image: -webkit-linear-gradient(top,#e7f0fc,#c7ddf9);
+    background-image: -moz-linear-gradient(top,#e7f0fc,#c7ddf9);
+    background-image: -o-linear-gradient(top,#e7f0fc,#c7ddf9);
+    background-image: -ms-linear-gradient(top,#e7f0fc,#c7ddf9);
+    background-image: linear-gradient(top,#e7f0fc,#c7ddf9);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    border-color: #a9cbf5;
+}
+
+.background_btn_save16 {
+    width: 16px;
+    height: 16px;
+    background: url('../../Contents/images/save16.png') 50% 50% no-repeat;
+}
+
+.background_btn_disable16 {
+    width: 16px;
+    height: 16px;
+    background: url('../../Contents/images/Disabled16.png') 50% 50% no-repeat;
+}
+/*btn dialog register reader*/
+.ui-dialog .ui-dialog-buttonpane button {
+    display: none;
+}
+/* css chung cho nút dialog*/
+
+.btn_dialog {
+    position: relative;
+    outline: 0!important;
+    padding: 1px 2px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+    min-width: 75px;
+    background-image: none;
+    background-color: #f9f9f9;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(48%, #f9f9f9), color-stop(52%, #e2e2e2), color-stop(100%, #e8e8e8));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: -o-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+    background-image: linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+}
+
+    .btn_dialog:focus {
+        background-color: #f9f9f9;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3f2ff), color-stop(48%, #d9edff), color-stop(52%, #c2d8f2), color-stop(100%, #c6dcf6));
+        background-image: -webkit-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        background-image: -moz-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        background-image: -o-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        background-image: linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        border-color: #b0ccf2;
+    }
+    .btn_dialog:hover {
+        background-color: #f9f9f9;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3f2ff), color-stop(48%, #d9edff), color-stop(52%, #c2d8f2), color-stop(100%, #c6dcf6));
+        background-image: -webkit-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        background-image: -moz-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        background-image: -o-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        background-image: linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+        border-color: #b0ccf2;
+    }
+.ui-dialog .ui-dialog-content {
+    background: none;
+    overflow: hidden;
+}
+.btn_dialog div:nth-child(1) {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+.btn_dialog div:nth-child(2) {
+    margin-left:16px;
+    color: #333;
+    padding: 0 4px;
+    text-align: center;
+    flex: 1;
+}
+
+.form_text_wrap_invalid {
+    border-color: #c30 !important;
+}
+/* css cho tooltip validate */
+.highlight {
+    border-width: 5px;
+    font-size: 12px;
+    box-shadow: rgb(136, 136, 136) 0px 0px 6px;
+    border-color: #c30 !important;
+    border-style: solid;
+    border-radius: 5px;
+    line-height: 18px;
+    height:30px;
+    text-align: center;
+    border-color: #a1311f;
+    -webkit-box-shadow: #d87166 0 1px 0 0 inset, #d87166 0 -1px 0 0 inset, #d87166 -1px 0 0 0 inset, #d87166 1px 0 0 0 inset;
+    -moz-box-shadow: #d87166 0 1px 0 0 inset,#d87166 0 -1px 0 0 inset,#d87166 -1px 0 0 0 inset,#d87166 1px 0 0 0 inset;
+    box-shadow: #d87166 0 1px 0 0 inset, #d87166 0 -1px 0 0 inset, #d87166 -1px 0 0 0 inset, #d87166 1px 0 0 0 inset;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 4px 4px 4px 4px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+}
+.ic_alert16 {
+    width: 16px;
+    height: 16px;
+    background: 1px 1px no-repeat;
+    background-image: url('../../Contents/images/alert.gif');
+}
+/*thay đổi màu sắc khi nút được bấm*/
+.x-btn-default-small-pressed {
+    border-color: #9ebae1;
+    background-image: none;
+    background-color: #b6cbe4;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#b6cbe4),color-stop(48%,#bfd2e6),color-stop(52%,#8dc0f5),color-stop(100%,#98c5f5));
+    background-image: -webkit-linear-gradient(top,#b6cbe4,#bfd2e6 48%,#8dc0f5 52%,#98c5f5);
+    background-image: -moz-linear-gradient(top,#b6cbe4,#bfd2e6 48%,#8dc0f5 52%,#98c5f5);
+    background-image: -o-linear-gradient(top,#b6cbe4,#bfd2e6 48%,#8dc0f5 52%,#98c5f5);
+    background-image: linear-gradient(top,#b6cbe4,#bfd2e6 48%,#8dc0f5 52%,#98c5f5);
+}
+.x-menu-item-active {
+    background-image: none;
+    background-color: #d9e8fb;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#e7f0fc),color-stop(100%,#c7ddf9));
+    background-image: -webkit-linear-gradient(top,#e7f0fc,#c7ddf9);
+    background-image: -moz-linear-gradient(top,#e7f0fc,#c7ddf9);
+    background-image: -o-linear-gradient(top,#e7f0fc,#c7ddf9);
+    background-image: linear-gradient(top,#e7f0fc,#c7ddf9);
+    border-color: #a9cbf5!important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0;
+}
+/*khi hover các dòng trong dropdown của nút lọc*/
+/*class cho icon resize table*/
+.ic_resize_table {
+    cursor: pointer;
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 50%;
+    background-image: url('/Contents/Images/resize_ic.gif');
+}
+/* class css khi hover nút đăng ký bạn đọc*/
+.register_tool_over {
+    display:table-cell;
+    background: transparent url('../../Contents/Images/toolbar-item-hover (1).png') repeat center center;
+    border-color: #bbcadb;
+}
+    .change::after {
+       background-image: url("/Contents/Images/line_blue_register_reader.png.gif") ;
+    }
+/*loading icon trên bảng bạn đọc*/
+.loading_img {
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #99bce8;
+    background: #dfe9f6;
+    position: absolute;
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(25%);
+    /* align-self: center; */
+}
+    .loading_img .wrap_content {
+        padding: 0 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #a3bad9;
+        background-color: #eee;
+        color: #222;
+        font: normal 11px tahoma,arial,verdana,sans-serif;
+    }
+    .loading_img .loading_ic {
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-image: url('/Contents/Images/loadingquayquay.gif');
+        width: 16px;
+        height: 16px;
+    }
+    /* chữ trong loadding*/
+    .loading_img .txt_loading {
+        padding: 5px 5px 5px 5px;
+        white-space: nowrap;
+    }
+.loading_ic_rental {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(/Contents/Images/loadingquayquay.gif);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

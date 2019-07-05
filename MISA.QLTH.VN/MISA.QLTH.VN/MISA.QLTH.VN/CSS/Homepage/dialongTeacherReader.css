@@ -1,0 +1,586 @@
+﻿.btn-duplicate {
+    background-position: 0-1888px;
+}
+
+.btn-edit {
+    background-position: 0 -2632px;
+}
+
+.btn-delete {
+    background-position: 0 -2680px;
+}
+
+
+
+.dialog_add_teacher_title_bar {
+    padding: 6px 5px 4px 5px !important;
+    background-color: #DEDEDE;
+    position: absolute !important;
+    top: -1px;
+    left: 0px;
+    height: 32px;
+    width: calc(100% + 1px);
+    border: 1px solid #a2b1c5;
+    border-width: 1px 1px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    background-image: -moz-linear-gradient(center top, #ffffff, #DEDEDE);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #DEDEDE));
+    background-image: -webkit-linear-gradient(top, #ffffff, #DEDEDE );
+    background-image: -o-linear-gradient(top, #ffffff, #DEDEDE );
+    background-image: linear-gradient(top, #ffffff, #DEDEDE);
+}
+/* dialog header*/
+.dialog_alert_header {
+    padding: 6px 5px 4px 5px !important;
+    background-color: #DEDEDE;
+    position: absolute !important;
+    top: -1px;
+    left: 0px;
+    height: 32px;
+    width: calc(100% + 1px);
+    border-style: solid;
+    border-color: #a2b1c5;
+    border-width: 1px 1px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    background-image: -moz-linear-gradient(center top, #ffffff, #DEDEDE);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #DEDEDE));
+    background-image: -webkit-linear-gradient(top, #ffffff, #DEDEDE );
+    background-image: -o-linear-gradient(top, #ffffff, #DEDEDE );
+    background-image: linear-gradient(top, #ffffff, #DEDEDE);
+}
+/* dialog title*/
+.ui-dialog-title {
+    display: flex;
+    align-items: center;
+}
+
+    .ui-dialog-title .ic_dialog {
+        display: inline-block;
+        margin-right: 4px;
+        background-image: url('/Contents/images/logo25.png');
+        width: 25px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 25px;
+    }
+
+.ui-dialog-title {
+    font-weight: bold;
+    margin: 0px !important;
+    margin-left: 5px;
+}
+
+/* css dialog thêm bạn đọc*/
+.dialog_Add_Teacher {
+    padding: 8px 8px !important;
+}
+
+#dialog_add_teacher_content {
+    display: flex;
+}
+/* css ảnh dialog thêm bạn đọc*/
+    #dialog_add_teacher_content .img_reader {
+        height: 220px;
+        width: 129px;
+        display: flex;
+        flex-grow: 0;
+        margin-right: 10px;
+        width: 130px;
+        border-right: solid 1px #ccc;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #dialog_add_teacher_content .img_reader span {
+            color: blue !important;
+            position: absolute;
+            display: block;
+            white-space: nowrap;
+            cursor: pointer;
+            top: 140px;
+        }
+        #dialog_add_teacher_content .img_reader div{
+            width:120px;
+            height:120px;
+            justify-content:center;
+        }
+        #dialog_add_teacher_content .img_reader img {
+            border: 1px solid #ccc;
+        }
+
+        #dialog_add_teacher_content .img_reader input {
+            color: blue;
+            cursor: pointer;
+            width: 100px;
+            font-size: 12px;
+            position: relative;
+            opacity: 0;
+        }
+
+    #dialog_add_teacher_content .add_dialog_line {
+        border-style: solid;
+        height: 216px;
+        border-width: 0px 1px 0px 0px;
+        /* height: 100%; */
+        border-color: #ccc;
+        /* width: 1px; */
+    }
+
+.dialog_Add_Teacher {
+    padding: 8px 8px !important;
+}
+#dialog_add_teacher_content {
+    display: flex;
+}
+
+    #dialog_add_teacher_content .img_reader {
+        height: 220px;
+        width: 129px;
+        display: flex;
+        padding-right: 9px;
+        flex-grow: 0;
+        margin-right: 10px;
+        width: 140px;
+        border-right: solid 1px #ccc;
+        /* margin-top: 5px; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+        #dialog_add_teacher_content .img_reader img {
+            max-width: 120px;
+            max-height: 120px;
+        }
+
+        #dialog_add_teacher_content .img_reader input {
+            color: blue;
+            cursor: pointer;
+            width: 100px;
+            font-size: 12px;
+            position: relative;
+            opacity: 0;
+        }
+
+    #dialog_add_teacher_content .add_dialog_line {
+        border-style: solid;
+        height: 216px;
+        border-width: 0px 1px 0px 0px;
+        /* height: 100%; */
+        border-color: #ccc;
+        /* width: 1px; */
+    }
+
+.dialog_Add_Teacher {
+    padding: 8px 8px !important;
+}
+/* css phần dưới dialog thêm bạn đọc*/
+.dialog_Add_Teacher_footer {
+    padding: 0px !important;
+}
+
+#btn_cancel {
+    margin-right: 0px !important;
+}
+
+.dialog_Add_Teacher #dialog_add_teacher_content .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space:nowrap;
+    color: #000;
+    display: flex;
+    line-height: 22px;
+    padding-bottom: 6px;
+}
+/*NNDUONG 30/05/2019 NOI CHUA CAC INPUT*/
+.dialog_Add_Teacher td {
+    padding-bottom: 6px;
+}
+
+.dialog_row1 {
+    width: 100%;
+}
+
+#wrap_form_register_reader .address_input {
+    width: 100%;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+#wrap_form_register_reader {
+    flex: 1;
+}
+
+    #wrap_form_register_reader .address_input input {
+        width: 100%;
+    }
+
+#dialog_add_teacher_content .title {
+    font-weight: bold;
+    width: 140px;
+    padding: 5px 1px 19px 0px;
+    color: #000;
+}
+
+#id_register_reader {
+    width: 100%;
+}
+/*không để các chữ tiêu đề của dialog bạn đọc xuống dòng*/
+.label_input {
+    white-space: nowrap;
+}
+
+#id_register_reader tr td .label_input span {
+    color: red;
+}
+
+#id_register_reader tr td:nth-child(1) {
+    width: 76px;
+}
+
+
+#id_register_reader tr td .wrap_input {
+    width: 100%;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+
+#id_register_reader tr td .input {
+    
+    min-width: 0px;
+}
+
+#id_register_reader tr td .table1_col_6 {
+    padding-left: 10px;
+    width: 105px;
+}
+
+#id_register_reader tr td .input input {
+    display: block;
+    width: 100%;
+    outline: 0;
+    border: none;
+    height: 20px;
+    padding: 2px 5px;
+    border-radius: 0px;
+    min-width: 0px;
+}
+
+.dialog_Add_Teacher input {
+    height: 24px;
+    outline: none;
+    border: 1px solid #ccc;
+    font: normal 12px 'Segoe UI';
+    padding: 1px 3px 2px 3px;
+}
+
+    .dialog_Add_Teacher input:focus {
+        border-color: #99bce8;
+    }
+
+.table_title input:focus {
+    border-color: #99bce8;
+}
+
+#id_register_reader tr .select_date {
+    width: 22px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    background: url('/Contents/images/sprite.gif') no-repeat;
+}
+/* độ rộng các input label name trong dialog*/
+/* css cột 2 dòng 1*/
+.table1_co1_2 {
+    padding-left: 10px;
+    width: 105px;
+}
+
+.label_input_in_table {
+    padding-left: 30px;
+    width: 46px;
+    /* margin-right: 10px; */
+    box-sizing: content-box;
+    padding-left: 30px;
+}
+/* css dòng 2 cột 3*/
+.table2_col_3 {
+    width: 72px;
+}
+/* css dòng 2 cột 4*/
+.table2_col_4 {
+    width: 81px;
+}
+/* css dòng 1 cột 3*/
+.table_col_3 {
+    padding-left: 30px;
+    margin-right: 10px;
+}
+/* css dòng 1 cột 4*/
+.table1_col_4 {
+    padding-left: 10px;
+    width: 70px;
+}
+/* css dòng 1 cột 4*/
+.table1_col_5 {
+    width: 53px;
+}
+/* css ô nhập giới tính*/
+.input_gender {
+    width: 40px;
+}
+/* css div bao quanh họ và tên*/
+#id_register_reader tbody tr td .wrap_show_name {
+    padding-left: 10px;
+    overflow: hidden;
+    min-width: 160px;
+    width: 100%;
+    max-width: 160px;
+}
+/* css ô hiển thị họ và tên*/
+#id_register_reader tbody tr td .show_name {
+    background-color: #F2F2F2;
+    height: 22px;
+    text-align: left;
+    overflow: hidden;
+    /* padding-left: 10px; */
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: 1px solid #DFDFDF;
+    width: 100%;
+    color: rgba(0,0,0,0.54);
+    /* max-width: 150px; */
+}
+/* css nút thêm*/
+#btnAdd span:nth-child(1) {
+    background: url('../../Contents/images/save16.png') no-repeat 50% 50% !important;
+}
+/* css nút exit*/
+#btnExit span:nth-child(1) {
+    background: url('../../Contents/images/Disabled16.png') no-repeat 50% 50% !important;
+}
+
+.wrap_content {
+    display: inline-block;
+    padding: 0px 0px 15px 0px;
+}
+/*css dialog thêm bạn đọc */
+.dialog_add_teacher {
+    border-radius: 5px;
+    border-width: 0px;
+    border-style: solid;
+    padding: 0px;
+    background-color: #DEDEDE;
+    border-color: #a2b1c5;
+    padding: 3px;
+    outline: 0;
+    height: 325px !important;
+    /* overflow: hidden; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+    -moz-box-shadow: #ecf2fb 0 1px 0 0 inset,#ecf2fb 0 -1px 0 0 inset,#ecf2fb -1px 0 0 0 inset,#ecf2fb 1px 0 0 0 inset;
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+}
+
+.dialog_add_teacher_buttonset .wrap-flex #btn_add, .dialog_add_teacher_buttonset .wrap-flex #btn_edit {
+    margin-right: 8px !important;
+}
+/* css tiêu đề dialog thêm bạn đọc*/
+.dialog_add_teacher_titlebar {
+    font-size: 11px !important;
+    border-color: #a2b1c5 !important;
+    -webkit-box-shadow: #ECF303 0 1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset !important;
+    -moz-box-shadow: #ecf2fb 0 1px 0 0 inset,#ecf2fb -1px 0 0 0 inset,#ecf2fb 1px 0 0 0 inset !important;
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset !important;
+    background-color: #DEDEDE !important;
+    background-image: -moz-linear-gradient(center top, #ffffff, #DEDEDE) !important;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #DEDEDE)) !important;
+    background-image: -webkit-linear-gradient(top, #ffffff, #DEDEDE ) !important;
+    background-image: -o-linear-gradient(top, #ffffff, #DEDEDE ) !important;
+    background-image: linear-gradient(top, #ffffff, #DEDEDE) !important;
+    border-radius: 5px 5px 0 0 !important;
+    border-style: solid !important;
+    border-width: 1px 1px 0 !important;
+    padding: 6px 5px 4px 5px !important;
+}
+
+.dialog_Add_Teacher_title {
+}
+/* css nơi chứa các input*/
+.dialog_add_teacher_buttonpane {
+    border-width: 0px 1px 1px 1px !important;
+    border-style: solid;
+    border-color: #A5B3C5;
+    background-color: white !important;
+    margin-top: 6px !important;
+    padding: 0px 8px 8px 8px !important;
+    padding-top: 8px !important;
+    width: 737px;
+    position: absolute;
+    bottom: 4px;
+}
+
+.dialog_add_teacher_title_content {
+    border: 1px solid #A5B3C5 !important;
+    border-width: 1px 1px 1px 0px;
+    position: absolute !important;
+    top: 31px;
+    width: 737px !important;
+    height: 249px !important;
+    background-color: white !important;
+}
+/* css cho nút đóng dilog*/
+.dialog_add_teacher_close {
+    width: 15px !important;
+    height: 15px !important;
+    min-width: auto;
+    top: 62% !important;
+    border: none;
+}
+
+    .dialog_add_teacher_close img:nth-child(2) {
+        width: 15px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 15px;
+        background-image: url(/Contents/Images/toolbar_header.gif) !important;
+    }
+/*dialog cảnh báo*/
+.notify_data_exist_ic {
+}
+
+.dialog_alert {
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #DEDEDE;
+    border-color: #a2b1c5;
+    padding: 3px;
+    height: 131px !important;
+    outline: 0;
+    width: 372px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+    -moz-box-shadow: #ecf2fb 0 1px 0 0 inset,#ecf2fb 0 -1px 0 0 inset,#ecf2fb -1px 0 0 0 inset,#ecf2fb 1px 0 0 0 inset;
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+}
+/* dialog cảnh báo*/
+.dialog_alert_content {
+    height: auto !important;
+    background-color: #ffffff !important;
+    border: 1px solid #A5B3C5 !important;
+    color: black;
+    padding: 8px !important;
+    border-bottom: none !important;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute !important;
+    top: 34px;
+    width: calc(100% - 6px) !important;
+    height: calc(100% - 37px) !important;
+}
+
+    .dialog_alert_content .wrap_buttonset {
+        margin-top: 4;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        /* float: right; */
+    }
+
+        .dialog_alert_content .wrap_buttonset #dialog_alert_btn_accept {
+            margin-right: 8px;
+            outline:0;
+        }
+        .dialog_alert_content .wrap_buttonset .dialog_information_btn_accept{
+            margin-right:0px!important;
+        }
+        .dialog_alert_content .wrap_buttonset #dialog_alert_btn_cancel {
+        }
+
+            .dialog_alert_content .wrap_buttonset #dialog_alert_btn_cancel span:nth-child(1) {
+                position: absolute;
+                width: 16px;
+                top: 4px;
+                height: 16px;
+                left: 4px;
+                display: inline-block;
+                background: url(/Contents/Images/Disabled16.png) no-repeat 50% 50% !important;
+            }
+
+            .dialog_alert_content .wrap_buttonset #dialog_alert_btn_cancel span:nth-child(2) {
+                display: block;
+                margin-left: 16px;
+            }
+
+        .dialog_alert_content .wrap_buttonset #dialog_alert_btn_accept span:nth-child(1) {
+            position: absolute;
+            width: 16px;
+            top: 3px;
+            height: 16px;
+            left: 4px;
+            display: inline-block;
+            background: url(/Contents/Images/submit16.png) no-repeat 50% 50% !important;
+        }
+
+        .dialog_alert_content .wrap_buttonset #dialog_alert_btn_accept span:nth-child(2) {
+            display: block;
+            margin-left: 16px;
+        }
+
+    .dialog_alert_content .wrap_content .wrap_content_img {
+        width: 32px;
+        margin-right: 8px;
+        height: 32px;
+        background: transparent url(/Contents/Images/warning32.png) no-repeat center center;
+    }
+
+    .dialog_alert_content .wrap_content .dialog_delete_img {
+        margin-right: 8px;
+        width: 32px;
+        height: 32px;
+        background: transparent url(/Contents/Images/question32.png) no-repeat center center !important;
+    }
+/* css nút đóng dialog*/
+.dialog_alert_close {
+    width: 15px !important;
+    height: 15px !important;
+    min-width: 15px;
+    max-width: 15px;
+    border: none;
+}
+
+    .dialog_alert_close img:nth-child(2) {
+        width: 15px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 15px;
+        background-image: url(/Contents/Images/toolbar_header.gif) !important;
+    }
+
+.line_dialog_add_teacher {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 1px solid #A5B3C5;
+    margin: 0px 8px;
+    width: calc(100% - 16px );
+}
+
+.dialog_add_teacher_close, .dialog_alert_close {
+        /* right: 8px !important; */
+    position: absolute;
+    top: 8px;
+}

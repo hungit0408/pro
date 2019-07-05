@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{614BCD22-B9C4-4538-B7DC-A4E988EF8F39}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MISA.QLTH.VN</RootNamespace>
+    <AssemblyName>MISA.QLTH.VN</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\Images\alert.gif" />
+    <Content Include="Contents\Images\arrow.gif" />
+    <Content Include="Contents\Images\arrow_down_white.png" />
+    <Content Include="Contents\Images\Capture.PNG" />
+    <Content Include="Contents\Images\Capture2.PNG" />
+    <Content Include="Contents\Fonts\awesome\font-awesome.css" />
+    <Content Include="Contents\Images\about_product.jpg" />
+    <Content Include="Contents\Images\add16.png" />
+    <Content Include="Contents\Images\Asset-app.png" />
+    <Content Include="Contents\Images\bg-x-column-header-trigger.gif" />
+    <Content Include="Contents\Images\bnRight.png" />
+    <Content Include="Contents\Images\Close16.png" />
+    <Content Include="Contents\Images\date-trigger.gif" />
+    <Content Include="Contents\Images\delete_metro.png" />
+    <Content Include="Contents\Images\Disabled16.png" />
+    <Content Include="Contents\Images\Document-app.png" />
+    <Content Include="Contents\Images\download %281%29.png" />
+    <Content Include="Contents\Images\download.gif" />
+    <Content Include="Contents\Images\download.png" />
+    <Content Include="Contents\Images\edit16.png" />
+    <Content Include="Contents\Images\email-app.png" />
+    <Content Include="Contents\Images\Equipment-app.png" />
+    <Content Include="Contents\Images\Export16.png" />
+    <Content Include="Contents\Images\Fee-app.png" />
+    <Content Include="Contents\Images\filter-ion.png" />
+    <Content Include="Contents\Images\first.png" />
+    <Content Include="Contents\Images\group-checked.gif" />
+    <Content Include="Contents\Images\Health-app.png" />
+    <Content Include="Contents\Images\help16 %281%29.png" />
+    <Content Include="Contents\Images\Help16.png" />
+    <Content Include="Contents\Images\ic_register_reader.gif" />
+    <Content Include="Contents\Images\Import16.png" />
+    <Content Include="Contents\Images\Info_16.png" />
+    <Content Include="Contents\Images\Library-app.png" />
+    <Content Include="Contents\Images\license.png" />
+    <Content Include="Contents\Images\line_blue_register_reader.png.gif" />
+    <Content Include="Contents\Images\loa.png" />
+    <Content Include="Contents\Images\loadingquayquay.gif" />
+    <Content Include="Contents\Images\logo.png" />
+    <Content Include="Contents\Images\logo25.png" />
+    <Content Include="Contents\Images\nu.jpg" />
+    <Content Include="Contents\Images\News-app.png" />
+    <Content Include="Contents\Images\nextdatepicker.gif" />
+    <Content Include="Contents\Images\no-image.jpg" />
+    <Content Include="Contents\Images\nam.jpg" />
+    <Content Include="Contents\Images\page-first-disabled.gif" />
+    <Content Include="Contents\Images\page-last.gif" />
+    <Content Include="Contents\Images\page-next.gif" />
+    <Content Include="Contents\Images\page-prev-disabled.gif" />
+    <Content Include="Contents\Images\Picture-app.png" />
+    <Content Include="Contents\Images\pre.png" />
+    <Content Include="Contents\Images\predatepick.gif" />
+    <Content Include="Contents\Images\printer16.png" />
+    <Content Include="Contents\Images\question32.png" />
+    <Content Include="Contents\Images\refresh16.png" />
+    <Content Include="Contents\Images\resize_ic.gif" />
+    <Content Include="Contents\Images\s-arrow-o.gif" />
+    <Content Include="Contents\Images\s-arrow.gif" />
+    <Content Include="Contents\Images\save16.png" />
+    <Content Include="Contents\Images\sprite.gif" />
+    <Content Include="Contents\Images\Student-app.png" />
+    <Content Include="Contents\Images\submenu.gif" />
+    <Content Include="Contents\Images\submit16.png" />
+    <Content Include="Contents\Images\TagHeader-Green.png" />
+    <Content Include="Contents\Images\TagHeader-Orange.png" />
+    <Content Include="Contents\Images\Teacher-app.png" />
+    <Content Include="Contents\Images\toolbar-item-hover %281%29.png" />
+    <Content Include="Contents\Images\toolbar_header.gif" />
+    <Content Include="Contents\Images\trigger.gif" />
+    <Content Include="Contents\Images\up_resize_table.gif" />
+    <Content Include="Contents\Images\Utility16.png" />
+    <Content Include="Contents\Images\Video-app.png" />
+    <Content Include="Contents\Images\warning32.png" />
+    <Content Include="Contents\Lib\WebResource.gif" />
+    <Content Include="CSS\Common\common.css" />
+    <Content Include="CSS\Library\awesome.css" />
+    <Content Include="CSS\Homepage\dialongTeacherReader.css" />
+    <Content Include="CSS\Library\Images\ui-icons_444444_256x240.png" />
+    <Content Include="CSS\Library\Images\ui-icons_555555_256x240.png" />
+    <Content Include="CSS\Library\Images\ui-icons_777620_256x240.png" />
+    <Content Include="CSS\Library\Images\ui-icons_777777_256x240.png" />
+    <Content Include="CSS\Library\Images\ui-icons_cc0000_256x240.png" />
+    <Content Include="CSS\Library\Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CSS\Library\jquery-ui.css" />
+    <Content Include="CSS\Library\jquery.tablescroll.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Scripts\base.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\ContextMenu\contextMenu.js" />
+    <Content Include="Scripts\Dialog\dialog.js" />
+    <Content Include="Scripts\Library\colResizable-1.6.min.js" />
+    <Content Include="CSS\Library\fontawesome.min.css" />
+    <Content Include="CSS\Library\bootstrap.min.css" />
+    <Content Include="CSS\Homepage\homePage1.css" />
+    <Content Include="CSS\Reset\normalize.css" />
+    <Content Include="CSS\Webfonts\fa-brands-400.svg" />
+    <Content Include="CSS\Webfonts\fa-regular-400.svg" />
+    <Content Include="CSS\Webfonts\fa-solid-900.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\Homepage\homePage.js" />
+    <Content Include="Scripts\Library\bootstrap.min.js" />
+    <Content Include="Scripts\Library\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\Library\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\Library\jquery-ui.js" />
+    <Content Include="Scripts\Library\jquery-ui.min.js" />
+    <Content Include="Scripts\Library\jquery.contextMenu.js" />
+    <Content Include="CSS\Library\jquery.contextMenu.min.css" />
+    <Content Include="Scripts\Library\jquery.maskedinput.js" />
+    <Content Include="Scripts\Library\jquery.min.js" />
+    <Content Include="Scripts\Library\jquery.ui.position.min.js" />
+    <Content Include="Scripts\Library\popper.min.js" />
+    <Content Include="Scripts\teacherReader.js" />
+    <Content Include="Views\ReaderList.html" />
+    <Content Include="Scripts\Library\jquery.tablescroll.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DetailController.cs" />
+    <Compile Include="Controllers\ReaderController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AjaxResult.cs" />
+    <Compile Include="Models\Detail.cs" />
+    <Compile Include="Models\TeacherReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\Fonts\Roboto-Black.ttf" />
+    <Content Include="Contents\Fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="Contents\Fonts\Roboto-Bold.ttf" />
+    <Content Include="Contents\Fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="Contents\Fonts\Roboto-Italic.ttf" />
+    <Content Include="Contents\Fonts\Roboto-Light.ttf" />
+    <Content Include="Contents\Fonts\Roboto-LightItalic.ttf" />
+    <Content Include="Contents\Fonts\Roboto-Medium.ttf" />
+    <Content Include="Contents\Fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="Contents\Fonts\Roboto-Regular.ttf" />
+    <Content Include="Contents\Fonts\Roboto-Thin.ttf" />
+    <Content Include="Contents\Fonts\Roboto-ThinItalic.ttf" />
+    <Content Include="Contents\Fonts\awesome\fontawesome-webfont.eot" />
+    <Content Include="CSS\Webfonts\fa-brands-400.eot" />
+    <Content Include="CSS\Webfonts\fa-brands-400.ttf" />
+    <Content Include="CSS\Webfonts\fa-brands-400.woff" />
+    <Content Include="CSS\Webfonts\fa-brands-400.woff2" />
+    <Content Include="CSS\Webfonts\fa-regular-400.eot" />
+    <Content Include="CSS\Webfonts\fa-regular-400.ttf" />
+    <Content Include="CSS\Webfonts\fa-regular-400.woff" />
+    <Content Include="CSS\Webfonts\fa-regular-400.woff2" />
+    <Content Include="CSS\Webfonts\fa-solid-900.eot" />
+    <Content Include="CSS\Webfonts\fa-solid-900.ttf" />
+    <Content Include="CSS\Webfonts\fa-solid-900.woff" />
+    <Content Include="CSS\Webfonts\fa-solid-900.woff2" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CSS\Library\Font\context-menu-icons.woff" />
+    <Content Include="CSS\Library\Font\context-menu-icons.woff2" />
+    <Content Include="CSS\Library\Font\context-menu-icons.eot" />
+    <Content Include="CSS\Library\Font\context-menu-icons.ttf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Contents\Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49737</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49737/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

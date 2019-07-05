@@ -1,0 +1,875 @@
+﻿<!DOCTYPE html>
+<html tabindex="-1">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/CSS/Library/awesome.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery.tablescroll.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery.contextMenu.min.css" rel="stylesheet" />
+    <link href="/CSS/Library/bootstrap.min.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery.tablescroll.css" rel="stylesheet" />
+    <link href="/CSS/Common/common.css" rel="stylesheet" />
+    <link href="/CSS/homepage/homePage1.css" rel="stylesheet" />
+    <link href="/CSS/homepage/dialongTeacherReader.css" rel="stylesheet" />
+    <title>Thư viện trường học</title>
+</head>
+<body>
+
+    <div id="header">
+        <div class="logo  ">
+            <div class="logo_left">
+                <div class="logo_left_logo"></div>
+                <div class="logo_left_note "> - Thư viện</div>
+                <div class="logo_left_menu_page fa fa-caret-down slideShowPageMenu"></div>
+
+
+            </div>
+            <div class="logo_right">
+                <div class="logo_right_name_school">Trường liên cấp MISA - admin</div>
+                <div class="logo_right_icon fa fa-caret-down logo_right_dropdown"></div>
+                <span class="logo_right_icon_help"></span>
+
+            </div>
+
+        </div>
+
+        <div class="homepage_menu">
+            <div class="flex_column">
+                <ul class="homepage_menu_left">
+                    <li class="homepage_menu_left_element">
+                        <span>Bàn làm việc</span>
+
+                    </li>
+                    <li class="homepage_menu_left_element">
+                        <span>Sách</span>
+                        <i class=""></i>
+
+
+                    </li>
+                    <li class="homepage_menu_left_element">
+                        <span>Báo, tạp chí</span>
+                        <i class=""></i>
+
+
+                    </li>
+                    <li class="homepage_menu_left_element">
+                        <span>Lưu thông</span>
+                        <i class=""></i>
+
+                    </li>
+                    <li href="HtmlPage1.html" class="homepage_menu_left_element">
+                        <span>Bạn đọc</span>
+
+                    </li>
+                    <li class="homepage_menu_left_element">
+                        <span>Danh mục</span>
+                        <i class=""></i>
+
+                    </li>
+                    <li class="homepage_menu_left_element">
+                        <span>Thiết lập</span>
+                        <i class=""></i>
+
+                    </li>
+                    <li class="homepage_menu_left_element">
+                        <span>Báo cáo</span>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="homepage_menu_right">
+                <div class="homepage_menu_right_above">
+                    <span>Năm học: </span>
+                    <span class="select_year">
+                        2018 - 2019
+                        <i class="fa fa-angle-down"> </i>
+                    </span>
+                </div>
+                <div class="homepage_menu_right_below">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="homepage_dropdown_sub" style="left:259px;top:75px">
+            <div class="homepage_dropdown_sub_item"><a>Lập phiếu mượn</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Trả sách </a></div>
+            <div class="homepage_dropdown_sub_item"><a>Danh sách phiều mượn</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Ghi nhận số lượt bạn đọc tại chỗ</a></div>
+        </div>
+        <div class="homepage_dropdown_sub" style="left:420px;top:75px">
+            <div class="homepage_dropdown_sub_item"><a>Nhà xuất bản</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Ký hiệu phân loại</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Danh sách mẫu trộn</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Nhà cung cấp</a></div>
+        </div>
+        <div class="homepage_dropdown_sub" style="left:514px;top:75px">
+            <div class="homepage_dropdown_sub_item"><a>Thời gian học/Lịch nghỉ lễ</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Nội quy thư viện</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Ký hiệu xếp giá</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Đánh số đăng ký cá biệt</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Thông tin đơn vị</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Thông tin năm học</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Nhật kí truy cập</a></div>
+
+
+
+        </div>
+        <div class="homepage_dropdown_sub" style="left:155px;top:75px">
+            <div class="homepage_dropdown_sub_item"><a>Danh sách báo, tạp chí</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Đăng ký báo, tạp chí </a></div>
+        </div>
+        <div class="homepage_dropdown_sub" style="left:92px;top:75px;">
+            <div class="homepage_dropdown_sub_item"><a>Danh sách sách</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Khai báo số lượng sách ban đầu</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Nhập sách</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Xuất sách</a></div>
+            <div class="homepage_dropdown_sub_item"><a>Kiểm kê sách</a></div>
+
+        </div>
+        <div class="biggest_menu_dropdown application_box" style="display:none;">
+            <ul class="biggest_menu_dropdown_content ">
+                <li>
+                    <a>
+                        <img src="/Contents/images/News-app.png" />
+                        <span>Website</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Teacher-app.png" />
+                        <span>Học sinh</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Teacher-app.png" />
+                        <span>Cán bộ, CCVC</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Equipment-app.png" />
+                        <span>Thiết bị</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Library-app.png" />
+                        <span>Thư viện</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Fee-app.png" />
+                        <span>Khoản thu</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Health-app.png" />
+                        <span>Y tế</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/email-app.png" />
+                        <span>Văn thư</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Document-app.png" />
+                        <span>Tài liệu</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Picture-app.png" />
+                        <span>Kho ảnh</span>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a>
+                        <img src="/Contents/images/Video-app.png" />
+                        <span>Kho phim</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="/Contents/images/Asset-app.png" />
+                        <span>Tài sản</span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="option_user_account ">
+            <a>Thay đổi mật khẩu</a>
+            <a>Đăng xuất</a>
+        </div>
+        <div class="list_year">
+            <ul>
+                <li><a>2018 - 2019 </a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="content_title">
+            <!--<div class="content_title_other">
+                <i></i>
+                <span>Phản hồi</span>
+            </div>-->
+            <div class="title_name"><span>Danh sách bạn đọc</span></div>
+            <div class="title_type">
+                <div><span>Học sinh</span></div>
+                <div><span>Giáo viên</span></div>
+
+            </div>
+
+
+        </div>
+        <div class="content_data">
+            <div class="table_tool context-menu-one">
+                <div class="table_tool_left">
+
+                    <div class="tool_bar tool_register_read tool_register_read_enable" title="Ctrl+Alt+N">
+                        <i class="tool_register_read_ele tool_ic_register"></i>
+                        <span class="tool_register_read_ele">Đăng ký bạn đọc</span>
+                    </div>
+                    <div class="tool_bar tool_edit tool_edit_enable" title="Ctrl+E">
+                        <i class="tool_edit_ele tool_ic_edit"></i>
+                        <span class="tool_edit_ele">Sửa</span>
+                    </div>
+                    <div class="tool_bar tool_delete tool_delete_enable" title="Ctrl+D">
+                        <i class="tool_delete_ele tool_ic_delete"></i>
+                        <span class="tool_delete_ele">Xóa</span>
+                    </div>
+                    <div class="tool_bar tool_charge tool_charge_enable" title="Ctrl+R">
+                        <i class="tool_charge_ele tool_ic_charge"></i>
+                        <span class="tool_charge_ele">Nạp</span>
+                    </div>
+                    <div class="toolbar_seperate_line">
+                    </div>
+                    <div class="tool_bar tool_import ">
+                        <i class="tool_import_ele tool_ic_import"></i>
+                        <span class="tool_import_ele">Nhập khẩu</span>
+                        <div class="tool_register_read_ele "></div>
+                    </div>
+                    <div class="tool_bar tool_export tool_export_enable">
+                        <i class="tool_export_ele tool_ic_export"></i>
+                        <span class="tool_export_ele">Xuất khẩu</span>
+                        <div class="tool_register_read_ele "></div>
+                    </div>
+                    <div class="toolbar_seperate_line">
+                    </div>
+                    <div class="tool_bar tool_print tool_print_enable">
+                        <i class="tool_print_ele tool_ic_print"></i>
+                        <span class="tool_print_ele" style="margin-right:0px;">In</span>
+                        <div class="tool_register_read_ele arrow_down"></div>
+                    </div>
+                    <div class="tool_bar     tool_help" title="Ctrl+H">
+                        <i class="tool_help_ele tool_ic_help"></i>
+                        <span class="tool_help_ele">
+                            Giúp
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table_column ">
+                <div class="position_relative">
+                    <div class="master flex-1 context-menu-one">
+                        <table class="table_title table_row_effect_hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="table_column_wrap">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">STT</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data" style="visibility:hidden;">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input">
+                                                    <div class="wrap_input">
+                                                        <input />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </th>
+                                    <th fieldName="ReaderCard" dataType="text">
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Mã thẻ</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input">
+                                                    <div class="wrap_input">
+                                                        <input />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="TeacherReaderName" dataType="text">
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Tên bạn đọc</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input">
+                                                    <div class="wrap_input">
+                                                        <input />
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="Office" dataType="text">
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Phòng ban</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input">
+                                                    <div class="wrap_input">
+                                                        <input />
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="Gender" dataType="text">
+
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Giới tính</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+
+                                                <div class="manipulation_data_input">
+                                                    <div class="wrap_input">
+                                                        <input class="ip_gender" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex color_gradient_gender btn_option_gender1">
+                                                    <div class="btn_option_gender table_column_option"></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </th>
+                                    <th fieldName="Birthday" dataType="date">
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Ngày sinh</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input date_picker flex">
+                                                    <div class="wrap_input">
+                                                        <input type="text" class="input_date" />
+                                                    </div>
+                                                    <div class="table_column_calendar"></div>
+                                                </div>
+                                                <!--<div class="manipulation_data_wrap">
+                                                    <div class="table_column_calendar"></div>
+                                                </div>-->
+                                                <!--<div class="manipulation_data_wrap">
+                                                    <div class="table_column_calendar"></div>
+                                                </div>-->
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="DateCreate" dataType="date">
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Ngày cấp</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input date_picker flex">
+                                                    <div class="wrap_input">
+                                                        <input type="text" class="input_date" />
+                                                    </div>
+                                                    <div class="table_column_calendar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="DateValid" dataType="date">
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Ngày hiệu lực</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input date_picker flex">
+                                                    <div class="wrap_input">
+                                                        <input type="text" class="input_date" />
+                                                    </div>
+                                                    <div class="table_column_calendar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="DateInValid" dataType="date">
+                                        <div class="table_column_wrap ">
+                                            <div class="column_header_txt_containter">
+                                                <span class="table_column_name">Ngày hết hạn</span>
+                                            </div>
+                                            <div class="table_column_manipulation_data">
+                                                <div class="btn_manipulation flex">
+                                                    <span class="btn_manipulation_content">
+                                                        <span class="btn_manipulation_wrap">
+                                                            <span>* :</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="manipulation_data_input date_picker flex">
+                                                    <div class="wrap_input">
+                                                        <input type="text" class="input_date" />
+                                                    </div>
+                                                    <div class="table_column_calendar"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+
+                        </table>
+                        <div class="wrap_table">
+                                <div class="loading_img">
+                                    <div class="wrap_content flex">
+                                        <div class="loading_ic"></div>
+                                        <div class="txt_loading">Đang tải...</div>
+                                    </div>
+                                </div>
+                            <table class="table_title table_row_effect_hover">
+                                <tbody tabindex="-1"></tbody>
+                            </table>
+                        </div>
+                        <!-- Phan trang cua bang thong tin giao vien o day -->
+                        <div class="seperate_page seperate_page_teacher">
+                            <div class="flex">
+                                <div class="seperate_page_sub btn_to_first" title="Trang đầu"><i></i></div>
+                                <div class="seperate_page_sub btn_to_pre" title="Trang trước"><i></i></div>
+                                <div class="toolbar_seperate_line">
+                                </div>
+                                <div class="seperate_page_sub"><span>Trang</span></div>
+                                <div class="seperate_page_sub">
+                                    <div class="wrap_input">
+                                        <input class="input_seperate_page" value="1" />
+                                    </div>
+                                </div>
+                                <div class="seperate_page_sub"><span>trên 6</span></div>
+                                <div class="toolbar_seperate_line">
+                                </div>
+                                <div class="seperate_page_sub to_next to_next_reader" title="Trang sau"><div class="btm_to_next"></div></div>
+                                <div class="seperate_page_sub to_last" title="Trang cuối"><div class="btm_to_last"></div></div>
+                                <div class="toolbar_seperate_line ">
+                                </div>
+                                <div class="seperate_page_sub"><span>Số bản ghi</span></div>
+                                <div class="input  seperate_page_sub wrap_drop_down3">
+                                    <div class="flex">
+                                        <div class="wrap_input">
+                                            <input class="input_seperate_page contain_txt_dropdown" value="50" />
+                                        </div>
+                                        <div class="flex color_gradient_gender btn_option_gender3">
+                                            <div class="btn_option_gender table_column_option"></div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="absolute_right"><span>Hiển thị <span class="number_record_page">1 - 50</span> trên <span class="sum_record">299</span> kết quả</span></div>
+                            </div>
+                        </div>
+                        <div class="splitter"><div class="ic_resize_table"></div></div>
+                    </div>
+                    <div class="details">
+                        <div class="detail_titles" style=" background-color #ffffff;">Lịch sử mượn trả</div>
+                        <table id="table_rental" class="border_table_qlth table_row_effect_hover">
+                            <thead>
+                                <tr>
+                                    <th><span dataType="text" fieldName="NumberDKCB" class="text_thead_qlth">Số ĐKCB</span></th>
+                                    <th><span dataType="text" fieldName="CodeISBN" class="text_thead_qlth">Mã ISBN </span></th>
+                                    <th><span dataType="text" fieldName="Title" class="text_thead_qlth">Nhan đề </span></th>
+                                    <th><span dataType="text" fieldName="NumberVotes" class="text_thead_qlth">Số phiếu</span> </th>
+                                    <th><span dataType="text" fieldName="Author" class="text_thead_qlth">Tác giả </span> </th>
+                                    <th><span dataType="date" fieldName="DateBorrow" class="text_thead_qlth">Ngày mượn   </span></th>
+                                    <th><span dataType="date" fieldName="DatePay" class="text_thead_qlth">Ngày hẹn trả    </span> </th>
+                                    <th><span dataType="date" fieldName="DateReport" class="text_thead_qlth">Ngày trả/báo mất</span> </th>
+                                    <th><span dataType="status" fieldName="Status" class="text_thead_qlth">Tình trạng      </span> </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table id="table_rental" class="border_table_qlth table_row_effect_hover">
+                            <tbody></tbody>
+
+
+                        </table>
+                        <div class="seperate_page ">
+                            <div class="flex">
+                                <div class="seperate_page_sub btn_to_first" title="Trang đầu"><i></i></div>
+                                <div class="seperate_page_sub btn_to_pre" title="Trang trước"><i></i></div>
+                                <div class="toolbar_seperate_line">
+                                </div>
+                                <div class="seperate_page_sub"><span>Trang</span></div>
+                                <div class="seperate_page_sub">
+                                    <div class="wrap_input">
+                                        <input class="input_seperate_page" value="1" />
+                                    </div>
+                                </div>
+                                <div class="seperate_page_sub"><span>trên 6</span></div>
+                                <div class="toolbar_seperate_line">
+                                </div>
+                                <div class="seperate_page_sub to_next" title="Trang sau"><div class="btm_to_next"></div></div>
+                                <div class="seperate_page_sub to_last" title="Trang cuối"><div class="btm_to_last"></div></div>
+                                <div class="toolbar_seperate_line ">
+                                </div>
+                                <div class="seperate_page_sub"><span>Số bản ghi</span></div>
+                                <div class="input flex seperate_page_sub contain_txt_dropdown wrap_drop_down4">
+                                    <div class="wrap_input">
+                                        <input class="input_seperate_page contain_txt_dropdown" value="50" />
+                                    </div>
+                                    <div class="flex color_gradient_gender btn_option_gender4">
+                                        <div class="btn_option_gender table_column_option"></div>
+                                    </div>
+
+                                </div>
+                                <div class="absolute_right"><span>Hiển thị 1 - 50 trên 299 kết quả</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--dialog here-->
+    <div class="dialog_Add_Teacher" style="display:none;">
+
+        <div id="dialog_add_teacher_content">
+            <div class="img_reader">
+                <div class="flex"><img src="/Contents/images/no-image.jpg"/></div>
+                <span>Thay ảnh khác</span>
+                <input type="file" id="uploadImage" value="Thay ảnh khác">
+            </div>
+            <div id="wrap_form_register_reader">
+                <div class="title">Thông tin bạn đọc</div>
+                <div>
+                    <table id="id_register_reader" class="dialog_row1">
+                        <tbody>
+                            <tr>
+                                <td><div class="label_input">Họ và đệm<span> (*)</span></div>  </td>
+                                <td>
+                                    <div class="input table1_co1_2">
+                                        <div class="wrap_input">
+                                            <input isValidateInput="yes" fieldInputRegister="falName" id="ip_falname" oninput="OnInput(event)" tabindex="1" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><div class="label_input label_input_in_table">Tên<span> (*)</span></div>        </td>
+                                <td>
+                                    <div class="table1_col_4">
+                                        <div class="input">
+                                            <div class="wrap_input">
+                                                <input isValidateInput="yes" fieldInputRegister="lName" id="ip_name" oninput="OnInput(event)" tabindex="2" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><div class="label_input table1_col_5 label_input_in_table">Họ và tên</div>                  </td>
+                                <td>
+                                    <div class="wrap_show_name">
+                                        <div class="show_name" id="id_show_name"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="label_input">Phòng ban<span> (*)</span></div></td>
+                                <td>
+                                    <div class="input table1_co1_2">
+                                        <div class="wrap_input">
+                                            <input isValidateInput="yes" fieldInputRegister="Office" tabindex="3" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="label_input label_input_in_table ">Giới tính</div>
+
+                                </td>
+                                <td>
+
+                                    <div class="input_ic_wrap input flex table1_col_4">
+                                        <div class="wrap_input">
+                                            <input fieldInputRegister="Gender" tabindex="4" class="ip_gender" />
+                                        </div>
+                                        <div class="color_gradient_gender">
+                                            <div class="btn_option_gender2 x-form-trigger-default table_column_option"></div>
+                                        </div>
+                                        <div class="table_column_option_dropdown list_gender2" style="cursor:pointer;display: none ; top: 24px; left: 11px;width: 100%;">
+                                            <ul>
+                                                <li>Nam</li>
+                                                <li>Nữ</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </td>
+                                <td><div class="label_input table1_col_5 label_input_in_table">Ngày sinh</div>                </td>
+                                <td>
+                                    <div class="input_ic_wrap flex table1_col_6">
+                                        <div class="input date_picker flex">
+                                            <div class="wrap_input">
+                                                <input fieldInputRegister="Birthday" tabindex="5" class="input_date" />
+
+                                            </div>
+                                            <div class="table_column_calendar"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex ">
+                    <table id="id_register_reader">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="label_input">Địa chỉ</div>
+                                </td>
+                                <td>
+                                    <div class="address_input">
+                                        <div class="wrap_input input">
+                                            <input fieldInputRegister="Address" tabindex="6" />
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="title">Thông tin thẻ thư viện</div>
+                <div class="wrap_content">
+                    <table id="id_register_reader">
+                        <tbody>
+                            <tr>
+                                <td> <div class="label_input ">Mã thẻ<span> (*)</span></div> </td>
+                                <td>
+                                    <div class="input table1_co1_2  ">
+                                        <div class="wrap_input">
+                                            <input isValidateInput="yes" fieldInputRegister="ReaderCard" tabindex="7" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><div class="label_input label_input_in_table table2_col_3 ">Ngày cấp</div>               </td>
+                                <td>
+                                    <div class="input_ic_wrap flex table1_col_6">
+                                        <div class="input  date_picker flex">
+                                            <div class="wrap_input">
+                                                <input fieldInputRegister="DateCreate" class="input_date table2_col_4" tabindex="8" />
+                                            </div>
+                                            <div class="table_column_calendar"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> <div class="label_input ">Ngày hiệu lực</div> </td>
+                                <td>
+                                    <div class="input_ic_wrap flex table1_co1_2">
+                                        <div class="input  date_picker flex">
+                                            <div class="wrap_input">
+                                                <input fieldInputRegister="DateValid" class="input_date table2_col_4" tabindex="9" />
+                                            </div>
+                                            <div class="table_column_calendar"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> <div class="label_input label_input_in_table table2_col_3">Ngày hết hạn</div>                  </td>
+                                <td>
+                                    <div class="input_ic_wrap flex table1_col_6">
+                                        <div class="input  date_picker flex">
+                                            <div class="wrap_input">
+                                                <input fieldInputRegister="DateInValid" class="input_date table2_col_4" tabindex="10" />
+                                            </div>
+                                            <div class="table_column_calendar"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- dialog mã trùng -->
+    <div class="notify_data_exist" style="display:none;">
+        <div class="wrap_content flex">
+            <div class="wrap_content_img"></div>
+            <span>Mã thẻ HS00101 đã được sử dụng. Vui lòng kiểm tra lại</span>
+        </div>
+        <div class="wrap_buttonset">
+            <button id="dialog_alert_btn_accept" class="btn_dialog" tabindex="1">
+                <span></span>
+                <span>Đồng ý</span>
+            </button>
+        </div>
+    </div>
+    <!--  dialog thông báo thêm thành công -->
+    <div class="notify_data_exist2" style="display:none;">
+        <div class="wrap_content flex">
+            <div class="wrap_content_img"></div>
+            <span>Mã thẻ HS00101 đã được sử dụng. Vui lòng kiểm tra lại</span>
+        </div>
+        <div class="wrap_buttonset">
+            <button id="dialog_alert_btn_accept" tabindex="1" class="btn_dialog dialog_information_btn_accept">
+                <span></span>
+                <span>Đồng ý</span>
+            </button>
+        </div>
+    </div>
+    <div class="notify_data_exist3" style="display:none;">
+        <div class="wrap_content flex">
+            <div class="wrap_content_img"></div>
+            <span>Mã thẻ HS00101 đã được sử dụng. Vui lòng kiểm tra lại</span>
+        </div>
+        <div class="wrap_buttonset">
+            <button id="dialog_alert_btn_accept" tabindex="1" class="btn_dialog">
+                <span></span>
+                <span>Đồng ý</span>
+            </button>
+        </div>
+    </div>
+    <div class="notify_data_exist4" style="display:none;">
+        <div class="wrap_content flex">
+            <div class="wrap_content_img dialog_delete_img"></div>
+            <span>Mã thẻ HS00101 đã được sử dụng. Vui lòng kiểm tra lại</span>
+        </div>
+        <div class="wrap_buttonset flex">
+            <button id="dialog_alert_btn_accept" tabindex="1" class="dialog_delete_btn btn_dialog">
+                <span></span>
+                <span>Đồng ý</span>
+            </button>
+            <button id="dialog_alert_btn_cancel" tabindex="2" class="btn_dialog">
+                <span></span>
+                <span>Không</span>
+            </button>
+        </div>
+    </div>
+    <!-- giao diện loading  -->
+
+    <!-- dropdown menu  -->
+    <!--library-->  
+    <script src="/Scripts/Library/jquery-3.4.1.min.js"></script>
+    <script src="/Scripts/Library/popper.min.js"></script>
+    <script src="/Scripts/Library/bootstrap.min.js"></script>
+    <!-- ui -->
+    <script src="/Scripts/Library/jquery-ui.js"></script>
+    <script src="/Scripts/Library/jquery.contextMenu.js"></script>
+    <script src="/Scripts/Library/jquery.ui.position.min.js"></script>
+    <script src="/Scripts/Library/colResizable-1.6.min.js"></script>
+    <script src="/Scripts/Library/jquery.tablescroll.js"></script>
+    <script src="/Scripts/Library/jquery.maskedinput.js"></script>
+    <script src="/Scripts/ContextMenu/contextMenu.js"></script>
+
+    <!-- js create common -->
+    <script src="/Scripts/common.js"></script>
+    <!-- js create -->
+    <script src="/Scripts/Dialog/dialog.js"></script>
+    <script src="/Scripts/base.js"></script>
+    <script src="/Scripts/teacherReader.js"></script>
+    <script src="/Scripts/Homepage/homePage.js"></script>
+</body>
+</html>
